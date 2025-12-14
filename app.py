@@ -79,68 +79,91 @@ def analyze_posting(text):
         risk = "LOW"
 
     return risk, unique_reasons
+# PDF GENERATION
 def generate_pdf(job_text, risk, reasons):
     pdf = FPDF()
     pdf.add_page()
     pdf.set_font("Arial", size=12)
 
     # Title
-    pdf.cell(
-        0, 10,
-        clean_text("TrustLens - Job Scam Risk Assessment Report"),
-        ln=True
+    pdf.set_x(pdf.l_margin)
+    pdf.multi_cell(
+        pdf.epw, 10,
+        clean_text("TrustLens - Job Scam Risk Assessment Report")
     )
 
     # Timestamp
-    pdf.cell(
-        0, 10,
-        clean_text(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M')}"),
-        ln=True
+    pdf.set_x(pdf.l_margin)
+    pdf.multi_cell(
+        pdf.epw, 8,
+        clean_text(f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M')}")
     )
 
     pdf.ln(5)
 
     # Risk Level
+    pdf.set_x(pdf.l_margin)
     pdf.set_font("Arial", "B", 12)
     pdf.cell(0, 10, clean_text("Risk Level:"), ln=True)
+
     pdf.set_font("Arial", size=12)
+    pdf.set_x(pdf.l_margin)
     pdf.cell(0, 10, clean_text(risk), ln=True)
 
     pdf.ln(5)
 
     # Detected Indicators
+    pdf.set_x(pdf.l_margin)
     pdf.set_font("Arial", "B", 12)
     pdf.cell(0, 10, clean_text("Detected Indicators:"), ln=True)
+
     pdf.set_font("Arial", size=12)
 
     if reasons:
         for r in reasons:
-            pdf.multi_cell(180, 8, clean_text("• " + r))
+            pdf.set_x(pdf.l_margin)
+            pdf.multi_cell(
+                pdf.epw, 8,
+                clean_text("• " + r)
+            )
+            pdf.ln(1)
     else:
-        pdf.multi_cell(180, 8, clean_text("No common scam indicators detected."))
+        pdf.set_x(pdf.l_margin)
+        pdf.multi_cell(
+            pdf.epw, 8,
+            clean_text("No common scam indicators detected.")
+        )
 
     pdf.ln(5)
 
     # Job Description
+    pdf.set_x(pdf.l_margin)
     pdf.set_font("Arial", "B", 12)
     pdf.cell(0, 10, clean_text("Submitted Job Description:"), ln=True)
+
     pdf.set_font("Arial", size=11)
-    pdf.multi_cell(180, 7, clean_text(job_text))
+    pdf.set_x(pdf.l_margin)
+    pdf.multi_cell(
+        pdf.epw, 7,
+        clean_text(job_text)
+    )
 
     pdf.ln(5)
 
     # Disclaimer
+    pdf.set_x(pdf.l_margin)
     pdf.set_font("Arial", "I", 10)
     pdf.multi_cell(
-        180, 7,
+        pdf.epw, 7,
         clean_text(
             "Disclaimer: This report provides advisory guidance only and does not guarantee accuracy. "
             "Users should independently verify job opportunities."
         )
     )
 
-    # ✅ RETURN MUST BE HERE (no extra indentation)
+    # ✅ Correct return type for Streamlit
     return bytes(pdf.output(dest="S"))
+
 
 import re
 
@@ -150,21 +173,23 @@ def normalize_text_for_scan(text):
     text = re.sub(r"\s+", " ", text)       # normalize spaces
     return text
 #ANALYSIS BASED ON WEIGHTED SCAM SIGNALS
-def analyze_job_text(job_text):
-    text = job_text.lower()
-    reasons = []
+def analyze_job_text(text):
+    text = text.lower()
     score = 0
+    reasons = []
 
-    for signal in SCAM_SIGNALS:
-        for kw in signal["keywords"]:
+    for category, data in SCAM_SIGNALS.items():
+        for kw in data["keywords"]:
             if kw.lower() in text:
-                reasons.append(signal["reason"])
-                score += signal["weight"]
-                break  # avoid double counting same signal
+                score += data["weight"]
+                reasons.append(
+                    f"{category}: detected phrase '{kw}'"
+                )
+                break
 
-    if score >= 10:
+    if score >= 12:
         risk = "HIGH"
-    elif score >= 5:
+    elif score >= 6:
         risk = "MEDIUM"
     else:
         risk = "LOW"
