@@ -1,0 +1,111 @@
+{
+  "Unrealistic Compensation": [
+    "100000", "50000 per month", "six figure income", "guaranteed income",
+    "earn daily", "earn per day", "instant income", "high pay",
+    "huge salary", "quick payout", "money fast", "get rich",
+    "paid immediately", "same day payment", "easy cash",
+    "no work high pay", "simple work high pay", "effortless income",
+    "passive income guaranteed", "automatic earnings"
+  ],
+
+  "Fees and Payments": [
+    "registration fee", "processing fee", "training fee", "startup fee",
+    "application fee", "background check fee", "equipment fee",
+    "security deposit", "activation fee", "onboarding fee",
+    "pay to apply", "payment required", "initial payment",
+    "send money first", "advance payment", "investment required",
+    "fee refundable later", "fee after selection", "pay before joining"
+  ],
+
+  "Urgency and Pressure": [
+    "urgent hiring", "apply immediately", "act now",
+    "limited slots", "hiring today", "last chance",
+    "offer expires today", "respond immediately",
+    "time sensitive", "final opportunity",
+    "fast response required", "instant confirmation",
+    "positions filling fast", "deadline today",
+    "no delay allowed", "only today"
+  ],
+
+  "Suspicious Contact Methods": [
+    "whatsapp only", "telegram only", "signal app",
+    "contact via chat", "text only",
+    "@gmail.com", "@yahoo.com", "@outlook.com",
+    "@hotmail.com", "@icloud.com",
+    "personal email", "direct message only",
+    "no official email", "contact recruiter privately",
+    "reach out personally", "message recruiter directly"
+  ],
+
+  "Vague or No Hiring Process": [
+    "no interview", "no resume needed",
+    "no experience required", "no qualifications required",
+    "instant hiring", "automatic selection",
+    "direct selection", "simple task",
+    "anyone can apply", "basic work",
+    "easy job", "no screening",
+    "no background check", "no verification",
+    "selected immediately", "start today"
+  ],
+
+  "Remote / Home Job Scams": [
+    "work from home", "home based job",
+    "online typing", "email processing",
+    "form filling job", "copy paste work",
+    "data entry job", "part time home job",
+    "online assistant job", "remote typing",
+    "home data entry", "online survey job",
+    "click work", "captcha entry",
+    "ad posting job", "sms sending job"
+  ],
+
+  "Impersonation & Fake Authority": [
+    "on behalf of company", "recruitment partner",
+    "outsourced hiring", "third party recruiter",
+    "hr assistant", "hr coordinator",
+    "acting hr", "external hr",
+    "company representative", "authorized recruiter",
+    "official agent", "staffing partner",
+    "vendor recruiter", "consultant hiring",
+    "partner company", "affiliated recruiter"
+  ],
+
+  "Financial Manipulation": [
+    "send money", "transfer funds",
+    "wire transfer", "bank transfer",
+    "crypto payment", "bitcoin",
+    "usdt", "ethereum",
+    "gift cards", "google play card",
+    "amazon gift card", "itunes card",
+    "overpayment refund", "reimbursement scheme",
+    "money mule", "refund processing"
+  ],
+
+  "Poor Professionalism Patterns": [
+    "dear candidate", "dear applicant",
+    "congratulations selected",
+    "kindly respond", "kindly share details",
+    "reply asap", "limited time",
+    "no company address",
+    "no official website",
+    "improper grammar",
+    "generic greeting",
+    "no job title",
+    "unclear responsibilities",
+    "copy pasted message",
+    "mass message"
+  ],
+
+  "Too-Good-To-Be-True Claims": [
+    "guaranteed job", "guaranteed placement",
+    "job assured", "no risk",
+    "success guaranteed",
+    "100 percent success",
+    "placement guaranteed",
+    "secure income",
+    "risk free job",
+    "no failure",
+    "confirmed hiring",
+    "job confirmation guaranteed"
+  ]
+}
