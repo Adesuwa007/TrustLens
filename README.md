@@ -1,4 +1,4 @@
-TrustLens 🔍
+## TrustLens 🔍
 
 Job & Internship Scam Risk Assessment Tool
 
@@ -6,7 +6,7 @@ TrustLens is a web-based tool created to help students and job applicants identi
 
 In recent years, employment scams have become increasingly sophisticated and harder to detect—especially for first-time applicants. TrustLens aims to reduce this risk by highlighting scam warning signs in a clear, visible, and easy-to-understand manner.
 
-Problem Statement
+## Problem Statement
 
 Despite the availability of legitimate job platforms today, job and internship scams continue to grow worldwide. Students and first-time job seekers are often the primary targets due to limited experience and lack of professional guidance.
 
@@ -21,7 +21,7 @@ Scammers commonly reach victims through:
 Most of these scams occur outside official job platforms, where platform-level safety mechanisms do not apply. As a result, individuals may lose money, have their personal data compromised, or lose confidence at the very beginning of their professional journeys.
 
 
-Solution Overview
+## Solution Overview
 
 TrustLens functions as a verification and awareness layer, rather than as a job platform. Users can paste any job or internship description—regardless of its source—into TrustLens. The system then:
 
@@ -60,7 +60,7 @@ Many scams are carefully designed to appear genuine. They often exploit:
 
 TrustLens transforms implicit warning signs into explicit explanations, helping users recognize patterns they might otherwise overlook. Over time, this also improves users’ own awareness and judgment. TrustLens does not replace judgment, it enhances it.
 
-How TrustLens Works
+## How TrustLens Works
 
 TrustLens uses a rule-based detection framework built on real-world scam patterns, including:
 
@@ -91,7 +91,7 @@ What Happens If Scammers Change Their Language?
 
 Although scam wording may evolve over time, behavioral patterns remain largely consistent, such as urgency, payment requests, unofficial communication, and lack of verification. TrustLens focuses on identifying these underlying patterns instead of relying solely on exact phrasing. Scam indicators are stored in external JSON files, allowing quick updates without modifying the core application logic.
 
-Key Features:
+## Key Features:
 -Detection of real-world scam indicators (200+ keywords)
 -Risk scoring (Low / Medium / High)
 -Clear and explainable detection results
@@ -100,7 +100,7 @@ Key Features:
 -Platform-agnostic input
 
 
-Limitations & Known Flaws (Honest Disclosure)
+## Limitations & Known Flaws (Honest Disclosure)
 
 TrustLens is an advisory tool, not a legal or authoritative system.
 
@@ -113,7 +113,7 @@ Therefore, results are presented as risk assessments, not definitive conclusions
 Awareness is the first line of defense.
 
 
-Scalability & Future Scope
+## Scalability & Future Scope
 
 TrustLens can be scaled as:
 -A public web application
@@ -121,7 +121,7 @@ TrustLens can be scaled as:
 -A browser extension
 -A campus-level safety and awareness tool
 
-Planned future enhancements include:
+## Planned future enhancements include:
 
 -ML-assisted adaptive detection
 -Community-driven scam indicator updates
