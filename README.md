@@ -1,124 +1,129 @@
-# TrustLens 🔍
+TrustLens 🔍
 
-### Job & Internship Scam Risk Assessment Tool
+Job & Internship Scam Risk Assessment Tool
 
-TrustLens is a web based tool created to assist students and job applicants in spotting possible fraudulent or hazardous job and internship opportunities. It examines job listings to find signs of scams and dubious activity aiding users in making more secure and well-informed choices prior, to applying.
+TrustLens is a web-based tool created to help students and job applicants identify potentially fraudulent or risky job and internship opportunities. It analyzes job descriptions to detect common scam indicators and suspicious behavior patterns, enabling users to make safer and more informed decisions before applying.
 
-Lately employment frauds have grown increasingly advanced and more difficult to detect— for those applying for the first time. TrustLens seeks to lower this danger by highlighting scam alerts in a noticeable and comprehensible manner.
+In recent years, employment scams have become increasingly sophisticated and harder to detect—especially for first-time applicants. TrustLens aims to reduce this risk by highlighting scam warning signs in a clear, visible, and easy-to-understand manner.
 
-## Problem Statement
+Problem Statement
 
-Despite the presence of authentic job platforms nowadays employment and internship frauds are increasingly widespread worldwide. Learners and those entering the workforce for the time frequently become the main victims due, to their potential lack of experience and career advice.
+Despite the availability of legitimate job platforms today, job and internship scams continue to grow worldwide. Students and first-time job seekers are often the primary targets due to limited experience and lack of professional guidance.
 
-Fraudsters often contact targets via:
-- Emails
-- WhatsApp or Telegram messages
-- Social media DMs
-- Third-party recruiters or consultants
-- Impersonated company representatives
+Scammers commonly reach victims through:
 
-The majority of these frauds happen *beyond employment platforms*, where safeguards, at the platform level are not enforced. Consequently individuals may suffer loss compromise their personal information or lose trust right at the beginning of their professional journeys.
+-Emails
+-WhatsApp or Telegram messages
+-Social media DMs
+-Third-party recruiters or consultants
+-Impersonated company representatives
 
-## Solution Overview
+Most of these scams occur outside official job platforms, where platform-level safety mechanisms do not apply. As a result, individuals may lose money, have their personal data compromised, or lose confidence at the very beginning of their professional journeys.
 
-*TrustLens* functions as a verification and awareness layer* rather, than serving as a job platform.
 
-Users have the option to insert any job or internship description—no its source—, into TrustLens. The platform subsequently:
-- Scans the content for common scam indicators
-- Assigns a risk level (Low / Medium / High)
-- Clearly explains why the content may be risky
-- Generates a downloadable PDF risk assessment report
+Solution Overview
 
-The objective is not simply to alert users but to assist them in comprehending why a job proposal could be risky.
+TrustLens functions as a verification and awareness layer, rather than as a job platform. Users can paste any job or internship description—regardless of its source—into TrustLens. The system then:
 
-## What Is the Benefit of TrustLens if Authentic Platforms Are Available?
+-Scans the content for common scam indicators
+-Assigns a risk level (Low / Medium / High)
+-Clearly explains why the content may be risky
+-Generates a downloadable PDF risk assessment report
 
-Authentic platforms concentrate on providing and showcasing job openings. They generally do not:
-- Analyze recruiter messages sent outside the platform
-- Explain scam patterns to users
-- Evaluate offers received via email or messaging apps
+The goal is not only to alert users, but also to help them understand why a particular opportunity may be unsafe.
 
-TrustLens is *platform-independent* indicating it works with content, from:
-- Job portals
-- Emails
-- WhatsApp or Telegram messages
-- Social media and recruiter DMs
+
+Why Use TrustLens When Legitimate Platforms Exist?
+
+-Legitimate platforms primarily focus on hosting and displaying job listings. They typically do not:
+-Analyze recruiter messages sent outside the platform
+-Explain scam patterns to users
+-Evaluate offers received through email or messaging apps
+
+
+TrustLens is platform-agnostic, meaning it works with content from:
+
+-Job portals
+-Emails
+-WhatsApp or Telegram messages
+-Social media and recruiter DMs
 
 Platforms host jobs. TrustLens verifies descriptions.
 
-## Why Not Just Rely on Common Sense?
+Why Not Just Rely on Common Sense?
 
-Numerous frauds are meticulously crafted to look authentic. They frequently take advantage of:
-- Urgency (“apply immediately”, “limited slots”)
-- Inexperience of first-time applicants
-- Financial pressure or false promises
+Many scams are carefully designed to appear genuine. They often exploit:
 
-TrustLens transforms ** warning signs** into *clear clarifications* aiding users in identifying trends they might otherwise miss. Gradually this also enhances users’ insight and attentiveness.
-TrustLens doesn’t substitute judgment. It *enhances* it.
+-Urgency (e.g., “apply immediately”, “limited slots”)
+-The inexperience of first-time applicants
+-Financial pressure or unrealistic promises
 
-## How TrustLens Works
+TrustLens transforms implicit warning signs into explicit explanations, helping users recognize patterns they might otherwise overlook. Over time, this also improves users’ own awareness and judgment. TrustLens does not replace judgment, it enhances it.
 
-TrustLens employs a rule-based detection framework* grounded in genuine scam patterns, such, as:
-- Unrealistic salary or income promises
-- Upfront or hidden fees
-- Urgent or pressuring language
-- Claims of no interview or verification
-- Suspicious contact methods
-- Vague or generic job descriptions
+How TrustLens Works
 
-Every identified indicator adds to a weighted risk score* which decides the ultimate risk level presented to the user.
+TrustLens uses a rule-based detection framework built on real-world scam patterns, including:
 
-## Why Rule-Based Instead of AI / ML?
+-Unrealistic salary or income promises
+-Upfront or hidden fees
+-Urgent or pressuring language
+-Claims of no interview or verification
+-Suspicious contact methods
+-Vague or generic job descriptions
+
+
+Each detected indicator contributes to a weighted risk score, which determines the final risk level presented to the user.
+
+
+Why Rule-Based Instead of AI / ML?
 
 This is a deliberate design choice.
 
-Rule-based detection offers:
-- Full transparency
-- Clear and explainable results
-- No black-box decisions
-- Lower risk of false confidence in safety-critical scenarios
+Rule-based detection provides:
+-Full transparency
+-Clear and explainable results
+-No black-box decisions
+-Lower risk of false confidence in safety-critical scenarios
 
-In the context of scam detection grasping why an item is considered risky usually holds value than getting a vague label. The framework is created so that machine learning models may be incorporated later as an upgrade than, as a substitute.
+In scam detection, understanding why something is considered risky is often more valuable than receiving an opaque classification. The system architecture is designed so that machine learning models can be added later as an enhancement rather than a replacement
 
-## What Happens If Fraudsters Alter Their Language?
+What Happens If Scammers Change Their Language?
 
-Although the language used in scams may change over time scam *behavioral patterns stay mostly stable*—including urgency demands, for payment, communication and absence of verification.
-TrustLens emphasizes identifying these hidden patterns of depending solely on precise expressions. Fraud signals are kept in JSON files enabling quick updates without altering the main application code.
+Although scam wording may evolve over time, behavioral patterns remain largely consistent, such as urgency, payment requests, unofficial communication, and lack of verification. TrustLens focuses on identifying these underlying patterns instead of relying solely on exact phrasing. Scam indicators are stored in external JSON files, allowing quick updates without modifying the core application logic.
 
-
-## Key Features
-
--  Detection of real-world scam indicators (200+ keywords)
--  Risk scoring (Low / Medium / High)
--  Clear, explainable detection results
--  Downloadable PDF risk assessment report
--  Lightweight, fast, and accessible
--  Platform-agnostic input
+Key Features:
+-Detection of real-world scam indicators (200+ keywords)
+-Risk scoring (Low / Medium / High)
+-Clear and explainable detection results
+-Downloadable PDF risk assessment report
+-Lightweight, fast, and accessible
+-Platform-agnostic input
 
 
-## Limitations & Known Flaws (Honest Disclosure)
+Limitations & Known Flaws (Honest Disclosure)
 
-TrustLens is an *advisory tool*, not a legal or authoritative system.
+TrustLens is an advisory tool, not a legal or authoritative system.
 
-Recognized constraints encompass:
-- It may miss highly sophisticated or novel scams (false negatives)
-- It may flag poorly written but legitimate job postings (false positives)
-- Analysis is limited to textual content and does not perform external verification
+Known limitations include:
+-It may miss highly sophisticated or novel scams (false negatives)
+-It may flag poorly written but legitimate job postings (false positives)
+-Analysis is limited to textual content and does not include external verification
 
-Hence the outcomes are shown as *risk evaluations*, than definitive conclusions.
+Therefore, results are presented as risk assessments, not definitive conclusions.
 Awareness is the first line of defense.
 
 
-## Scalability & Future Scope
+Scalability & Future Scope
 
-TrustLens may be. Scaled as:
-- A public web application
-- An API for job platforms
-- A browser extension
-- A campus-level safety and awareness tool
+TrustLens can be scaled as:
+-A public web application
+-An API for job platforms
+-A browser extension
+-A campus-level safety and awareness tool
 
-Intended upcoming improvements encompass:
-- ML-assisted adaptive detection
-- Community-driven scam indicator updates
-- URL and company domain verification
-- Multi-language support
+Planned future enhancements include:
+
+-ML-assisted adaptive detection
+-Community-driven scam indicator updates
+-URL and company domain verification
+-Multi-language support
