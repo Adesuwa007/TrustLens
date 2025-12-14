@@ -1,0 +1,11 @@
+## How to Run
+
+### Prerequisites
+- Python 3.9 or above
+- pip
+
+### Steps
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
